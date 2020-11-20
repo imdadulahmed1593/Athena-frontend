@@ -1,0 +1,123 @@
+.achievements {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.achievements__left {
+  flex: 0.4;
+}
+
+.achievements__left > p {
+  text-align: left;
+  width: 70%;
+}
+
+.achievements__right {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+}
+.achievements__rightTop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.achievements__rightBottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.achievement {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 150px;
+  background-color: white;
+  width: 315px;
+  margin: 10px;
+  box-shadow: 0 0 20px #88afe6;
+}
+.achievement:hover {
+  background: linear-gradient(to right, #1ddab8, #07abee);
+}
+.achievement:hover .achievement__detail > h2 {
+  color: #fff;
+}
+.achievement:hover .achievement__detail > h3 {
+  color: #fff;
+}
+.achievement:hover .achievement__icon {
+  filter: brightness(100%);
+}
+.achievement__detail > h2 {
+  font-weight: 800;
+  color: #707070;
+}
+.achievement__detail > h3 {
+  font-size: 1.5rem;
+  color: #707070;
+}
+.achievement1 {
+  border-radius: 0px 50px 0px 50px;
+}
+.achievement2 {
+  border-radius: 50px 0px 50px 0px;
+}
+.achievement3 {
+  border-radius: 50px 0px 50px 0px;
+}
+.achievement4 {
+  border-radius: 0px 50px 0px 50px;
+}
+.icon1 {
+  /* filter: brightness(0%); */
+  background: #707070;
+  border-radius: 50%;
+}
+.achievement__icon {
+  width: 50px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+@media (max-width: 800px) {
+  .achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .achievements__left > h1,
+  .achievements__left > p {
+    text-align: center !important;
+    width: 100%;
+  }
+  .achievements__right {
+    margin-top: 50px;
+  }
+  .achievements__rightTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .achievements__rightBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .achievement {
+    margin-bottom: 20px;
+  }
+}

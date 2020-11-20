@@ -1,0 +1,32 @@
+.navbar__logo {
+  height: 100px;
+  object-fit: contain;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+}
+.navbar-nav {
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.navbar__link {
+  padding: 5px 1rem !important;
+}
+
+.navbar__btn {
+  background: linear-gradient(to right, #1ddab8, #07abee);
+  padding: 8px 20px;
+  border-radius: 20px 0% 20px 0%;
+  margin-left: 5px;
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .navbar {
+    margin-top: 15px;
+  }
+}
